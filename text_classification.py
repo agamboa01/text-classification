@@ -29,7 +29,7 @@ def train(classifier, X, y,predict_text):
     print ("Accuracy: %s" % classifier.score(X_test, y_test))
     print ("predicted category: ",prediction)
 
-df = pd.read_csv("/home/ekbana/workspace/LOCAL/text-classification-using-machine-learning-algorithms/train_data.csv")
+df = pd.read_csv("train_data.csv")
 predict_text = ["How 'fast money' crushed 'Candy Crush' IPO"]
 actual_category = "b"
 
