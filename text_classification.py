@@ -1,4 +1,11 @@
 # - b : business - t : science and technology - e : entertainment - m : health
+"""
+--pre-requisites:
+nltk
+pandas
+sklearn
+"""
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
@@ -35,3 +42,16 @@ print ("=========LogisticRegression MODEL============")
 logistic_model = Pipeline([('vectorizer', TfidfVectorizer(tokenizer=stemming_tokenizer, stop_words=stopwords.words('english') + list(string.punctuation))),('classifier', LogisticRegression())])
 print ("actual category", actual_category)
 train(logistic_model, df['TITLE'], df['CATEGORY'],predict_text)
+
+
+"""
+OUTPUT:
+=========NAIVE MODEL============
+actual category b
+Accuracy: 0.9211567962727979
+predicted category:  ['b']
+=========LogisticRegression MODEL============
+actual category b
+Accuracy: 0.9251624022272306
+predicted category:  ['b']
+"""
