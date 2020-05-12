@@ -20,3 +20,14 @@ In this repo,
 
 To test, run main.py
 
+
+
+NOTE:
+Text Classification:
+1. Binary Classification: movie reviews, sentiment,ham/spam
+2. Multiclass Classification: news
+3. Multi Label Classification: news
+
+ML:
+1. using TFIDF Vectorizer
+2. Using Embeddings
