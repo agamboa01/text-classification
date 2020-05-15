@@ -4,7 +4,12 @@ Created Date: 12 Sept 2018
 In machine learning, multiclass or multinomial classification is the problem of classifying instances into one of three or more classes. (Classifying instances into one of two classes is called binary classification.)
 Multiclass classification should not be confused with multi-label classification, where multiple labels are to be predicted for each instance.
 
-
+Multi-Classification models
+- Random Forest
+- Linear Support Vector Machine
+- Multinomial Naive Bayes
+- Logistic Regression.
+<br>
 In this repo, 
 <br>
 1. Data can be found inside the "data" folder
